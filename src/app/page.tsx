@@ -5,11 +5,11 @@ import { Factory } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-100 font-sans">
-      <section className="flex h-[25rem] w-full max-w-4xl flex-col rounded-lg bg-white">
+    <div className="flex h-screen items-center justify-center font-sans">
+      <section className="flex h-[26rem] w-full max-w-4xl flex-col rounded-lg bg-white">
         {/* Header */}
-        <section className="h-16 rounded-t-lg shadow-md">
-          <h1 className="pt-3 text-center text-lg font-semibold">Admin Panel</h1>
+        <section className="h-28 rounded-t-lg shadow-md">
+          <h1 className="pt-4 text-center text-lg font-semibold">Admin Panel</h1>
         </section>
 
         {/* Konten */}
@@ -46,7 +46,7 @@ export default function Home() {
               <Input type="password" id="password" placeholder="Password" />
             </div>
 
-            <Button className="mt-4 w-full">Login</Button>
+            <Button className="mt-4 w-full bg-blue-600">Login</Button>
             <p className="mt-4 text-center text-xs text-gray-500">
               The world most powerfull onboarding tool. In this notification panel well keep you up
               to date on enhancments and notices.
