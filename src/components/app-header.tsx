@@ -1,7 +1,6 @@
 "use client";
 
-import { Bell, LogOut, Search, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { LogOut, Search } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function AppHeader() {
@@ -27,7 +26,7 @@ export default function AppHeader() {
     <header className="bg-background flex h-16 w-full items-center justify-between border-b px-6">
       {/* Page Title */}
       <div>
-        <h1 className="text-xl font-semibold">{getPageTitle()}</h1>
+        <h1 className="text-2xl font-semibold">{getPageTitle()}</h1>
         {/* <p className="text-muted-foreground text-sm">Welcome to your admin dashboard</p> */}
       </div>
 

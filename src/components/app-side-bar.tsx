@@ -62,10 +62,10 @@ export function AppSidebar() {
       <div className="flex items-center justify-between border-b p-4">
         {!collapsed && (
           <div className="flex items-center space-x-2">
-            <div className="bg-primary flex h-6 w-6 items-center justify-center rounded-sm">
-              <span className="text-primary-foreground text-xs font-bold">A</span>
+            <div className="bg-primary flex h-8 w-8 items-center justify-center rounded-sm">
+              <span className="text-primary-foreground text-xs font-bold">BM</span>
             </div>
-            <span className="text-lg font-semibold">Admin Panel</span>
+            <span className="text-muted-foreground text-md font-semibold">Batch Monitoring</span>
           </div>
         )}
         <Button
