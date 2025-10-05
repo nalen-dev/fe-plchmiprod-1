@@ -1,3 +1,4 @@
+import AppHeader from "@/components/app-header";
 import { AppSidebar } from "@/components/app-side-bar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import React from "react";
@@ -5,14 +6,20 @@ import React from "react";
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
-      <div className="flex h-screen">
+      <div className="grid h-screen w-full grid-cols-[auto_1fr]">
         {/* Sidebar */}
         <AppSidebar />
 
-        {/* Main content */}
-        <main className="w-max flex-1 transition-all duration-300">
-          <div className="p-4">{children}</div>
-        </main>
+        {/* Main Content Area */}
+        <div className="flex min-w-0 flex-col">
+          {/* Top Header */}
+          <AppHeader />
+
+          {/* Main Content */}
+          <main className="flex-1 overflow-auto">
+            <div className="p-6">{children}</div>
+          </main>
+        </div>
       </div>
     </SidebarProvider>
   );

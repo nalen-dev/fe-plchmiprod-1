@@ -6,10 +6,9 @@ import {
   Settings,
   ChevronLeft,
   ChevronRight,
-  Users,
-  FileText,
   BarChart3,
   User,
+  TableProperties,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -23,18 +22,13 @@ const navItems = [
     icon: Home,
   },
   {
-    title: "Users",
-    href: "/users",
-    icon: Users,
-  },
-  {
-    title: "Documents",
-    href: "/documents",
-    icon: FileText,
+    title: "Batch Data",
+    href: "/batch",
+    icon: TableProperties,
   },
   {
     title: "Analytics",
-    href: "/analytics",
+    href: "/analytic",
     icon: BarChart3,
   },
   {
